@@ -10,6 +10,9 @@ public class ResponseDTO<T> {
     private T data;
     private Long timestamp;
 
+    public ResponseDTO() {
+    }
+
     public ResponseDTO(String code, String message, T data) {
         this.code = code;
         this.message = message;

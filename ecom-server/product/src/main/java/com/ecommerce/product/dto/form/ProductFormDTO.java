@@ -10,4 +10,10 @@ import lombok.experimental.SuperBuilder;
 @NoArgsConstructor
 @SuperBuilder
 public class ProductFormDTO extends BaseFormDTO {
+    private Integer id;
+    private String name;
+    private String description;
+    private String thumbnail;
+    private Double price;
+    private int quantity;
 }

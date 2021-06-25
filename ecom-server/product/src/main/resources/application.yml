@@ -11,3 +11,6 @@ spring:
     username: admin
     password: 9POUk34d1JqC36Aq
     driver-class-name: com.mysql.cj.jdbc.Driver
+  jackson:
+    default-property-inclusion: non_null
+
