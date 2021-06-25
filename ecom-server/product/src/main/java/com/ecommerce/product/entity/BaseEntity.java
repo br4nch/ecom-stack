@@ -27,15 +27,15 @@ public class BaseEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id")
-    private Long id;
+    private Integer id;
 
     @CreationTimestamp
     @Column(name = "created_date")
     private Date createdDate;
 
     @UpdateTimestamp
-    @Column(name = "last_modified_date")
-    private Date lastModifiedDate;
+    @Column(name = "updated_date")
+    private Date updatedDate;
 
     @Version
     @Column(name = "version")

@@ -1,4 +1,4 @@
-package dto;
+package com.ecommerce.product.dto;
 
 import lombok.Data;
 

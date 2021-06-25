@@ -1,7 +1,7 @@
 package com.ecommerce.order.service;
 
+import com.ecommerce.order.dto.BaseDTO;
 import com.ecommerce.order.entity.BaseEntity;
-import dto.BaseDTO;
 
 import java.util.List;
 

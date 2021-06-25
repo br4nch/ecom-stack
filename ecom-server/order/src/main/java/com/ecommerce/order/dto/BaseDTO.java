@@ -1,4 +1,4 @@
-package dto;
+package com.ecommerce.order.dto;
 
 import lombok.Data;
 import lombok.EqualsAndHashCode;

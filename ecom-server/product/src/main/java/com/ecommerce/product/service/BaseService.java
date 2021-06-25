@@ -1,18 +1,22 @@
 package com.ecommerce.product.service;
 
 
+import com.ecommerce.product.dto.form.BaseFormDTO;
+import com.ecommerce.product.dto.query.BaseQueryDTO;
 import com.ecommerce.product.entity.BaseEntity;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageRequest;
 
 import java.util.List;
 
-public interface BaseService<E extends BaseEntity, D extends BaseDTO> {
-    D create(E e);
+public interface BaseService<E extends BaseEntity, Q extends BaseQueryDTO, F extends BaseFormDTO> {
+    F create(E e);
 
-    D update(E e);
+    F update(E e);
 
-    void delete(E e);
+    void delete(Long id);
 
-    List<D> getAll();
+    Page<Q> getAll(PageRequest pr);
 
-    D getOne(Long id);
+    Q getOne(Long id);
 }

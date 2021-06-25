@@ -1,9 +1,8 @@
 package com.ecommerce.order.configuration;
 
-import dto.ResponseDTO;
+import com.ecommerce.order.dto.ResponseDTO;
 import exception.CustomException;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
